@@ -1,0 +1,11 @@
+.wcc-standing {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    .wcc-standing {
+        display: none;
+    }
+}

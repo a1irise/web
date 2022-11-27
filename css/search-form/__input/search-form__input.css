@@ -1,0 +1,11 @@
+.search-form__input {
+    height: 30px;
+    width: 100%;
+    background: none;
+    border: none;
+    margin: 10px;
+}
+
+.search-form__input:focus {
+    outline: none;
+}

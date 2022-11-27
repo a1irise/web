@@ -1,0 +1,10 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: black;
+    padding: 30px 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}

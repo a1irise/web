@@ -1,0 +1,28 @@
+.wcc-standing__thead th {
+    font-size: 1rem;
+    line-height: normal;
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    text-align: center;
+    background: #e10600;
+    color: white;
+    margin: 0;
+    padding: 8px;
+    white-space: normal;
+    letter-spacing: 0;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.wcc-standing__thead th:nth-child(1) {
+    width: 20%;
+}
+
+.wcc-standing__thead th:nth-child(2) {
+    width: 50%;
+}
+
+.wcc-standing__thead th:nth-child(3) {
+    width: 30%;
+}

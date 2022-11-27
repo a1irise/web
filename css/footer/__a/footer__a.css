@@ -1,0 +1,36 @@
+.footer__a {
+    font-size: 1rem;
+    line-height: normal;
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    text-align: center;
+    background: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+    white-space: normal;
+    letter-spacing: 0;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.footer__a:link {
+
+}
+
+.footer__a:visited {
+    color: white;
+}
+
+.footer__a:focus {
+
+}
+
+.footer__a:hover {
+    color: #e10600;
+}
+
+.footer__a:active {
+
+}

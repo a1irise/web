@@ -1,456 +1,687 @@
 <!DOCTYPE HTML>
+<!--suppress HtmlFormInputWithoutLabel -->
 <html lang="ru">
     <head>
-        <title>f1merch</title>
+        <title>F1 Store</title>
         <meta charset="UTF-8">
         <meta name="keywords" content="формула 1, ф1, мерч">
         <meta name="description" content="Магазин мерча формулы 1 в России.">
-        <link href="./css/outlines.css" rel="stylesheet">
-        <link href="./css/outline-prototype-safe.css" rel="stylesheet">
+        <link href="./css/normalize.css" rel="stylesheet">
+        <link href="./css/header/header.css" rel="stylesheet">
+        <link href="./css/header/__logo/header__logo.css" rel="stylesheet">
+        <link href="./css/header/__icon/header__icon.css" rel="stylesheet">
+        <link href="./css/header/__img/header__img.css" rel="stylesheet">
+        <link href="./css/search-form/search-form.css" rel="stylesheet">
+        <link href="./css/search-form/__input/search-form__input.css" rel="stylesheet">
+        <link href="./css/search-form/__button/search-form__button.css" rel="stylesheet">
+        <link href="./css/search-form/__img/search-form__img.css" rel="stylesheet">
+        <link href="./css/main/main.css" rel="stylesheet">
+        <link href="./css/aside/aside.css" rel="stylesheet">
+        <link href="./css/aside/__header/aside__header.css" rel="stylesheet">
+        <link href="./css/team-menu/team-menu.css" rel="stylesheet">
+        <link href="./css/team-menu/__nav/team-menu__nav.css" rel="stylesheet">
+        <link href="./css/team-menu/__a/team-menu__a.css" rel="stylesheet">
+        <link href="./css/wcc-standing/wcc-standing.css" rel="stylesheet">
+        <link href="./css/wcc-standing/__table/wcc-standing__table.css" rel="stylesheet">
+        <link href="./css/wcc-standing/__caption/wcc-standing__caption.css" rel="stylesheet">
+        <link href="./css/wcc-standing/__thead/wcc-standing__thead.css" rel="stylesheet">
+        <link href="./css/wcc-standing/__tbody/wcc-standing__tbody.css" rel="stylesheet">
+        <link href="./css/best-team-radio/best-team-radio.css" rel="stylesheet">
+        <link href="./css/best-team-radio/__blockquote/best-team-radio__blockquote.css" rel="stylesheet">
+        <link href="./css/best-team-radio/__p/best-team-radio__p.css" rel="stylesheet">
+        <link href="./css/best-team-radio/__cite/best-team-radio__cite.css" rel="stylesheet">
+        <link href="./css/main-content/main-content.css" rel="stylesheet">
+        <link href="./css/main-content/__section/main-content__section.css" rel="stylesheet">
+        <link href="./css/main-content/__hr/main-content__hr.css" rel="stylesheet">
+        <link href="./css/main-content/__header/main-content__header.css" rel="stylesheet">
+        <link href="./css/main-content/__row/main-content__row.css" rel="stylesheet">
+        <link href="./css/merch-card/__img/merch-card__img.css" rel="stylesheet">
+        <link href="./css/merch-card/merch-card.css" rel="stylesheet">
+        <link href="./css/merch-card/__img/merch-card__img.css" rel="stylesheet">
+        <link href="./css/merch-card/__price/merch-card__price.css" rel="stylesheet">
+        <link href="./css/merch-card/__price/_type/merch-card__price_type_reduced.css" rel="stylesheet">
+        <link href="./css/merch-card/__price/_type/merch-card__price_type_regular.css" rel="stylesheet">
+        <link href="./css/merch-card/__title/merch-card__title.css" rel="stylesheet">
+        <link href="./css/footer/footer.css" rel="stylesheet">
+        <link href="./css/footer/__nav/footer__nav.css" rel="stylesheet">
+        <link href="./css/footer/__a/footer__a.css" rel="stylesheet">
+        <link href="./css/footer/__pre/footer__pre.css" rel="stylesheet">
+        <link href="./css/copyright/copyright.css" rel="stylesheet">
+        <link href="./css/formula/formula.css" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <img src="./resources/logo.png" alt="логотип" height="75">
-            <p>Наша формула успеха: цена<sup>0.5</sup> = клиенты<sup>&infin;</sup></p>
-            <ul>
-                <li><input type="search" placeholder="Поиск.."></li>
-                <li><input type="image" src="./resources/search.png" alt="поиск" height="45"></li>
-                <li><input type="image" src="./resources/account.png" alt="личный кабинет" height="45"></li>
-                <li><input type="image" src="./resources/cart.png" alt="корзина" height="45"></li>
-            </ul>
+        <header class="header">
+            <img class="header__logo" src="./resources/logo.png" alt="логотип">
+            <div class="search-form">
+                <input class="search-form__input" type="search" placeholder="Поиск..">
+                <button class="search-form__button">
+                    <img class="search-form__img" src="./resources/search.png" alt="поиск"/>
+                </button>
+            </div>
+            <a class="header__icon" href="./pages/account.html">
+                <img class="header__img" src="./resources/account.png" alt="idc"/>
+            </a>
+            <a class="header__icon" href="./pages/cart.html">
+                <img class="header__img" src="./resources/cart.png" alt="корзина"/>
+            </a>
         </header>
-        <main>
-            <aside>
-                <h1>Команды</h1>
-                <nav>
-                    <a href="#red_bull">Red Bull</a>
-                    <a href="#ferrari">Ferrari</a>
-                    <a href="#mercedes">Mercedes</a>
-                    <a href="#alpine">Alpine</a>
-                    <a href="#mclaren">McLaren</a>
-                    <a href="#alfa_romeo">Alfa Romeo</a>
-                    <a href="#haas">Haas</a>
-                    <a href="#alphatauri">AlphaTauri</a>
-                    <a href="#aston_martin">Aston Martin</a>
-                    <a href="#williams">Williams</a>
-                </nav>
+        <main class="main">
+            <aside class="aside">
+                <section class="team-menu">
+                    <h1 class="aside__header">Команда</h1>
+                    <nav class="team-menu__nav">
+                        <a class="team-menu__a" href="#red_bull">Red Bull</a>
+                        <a class="team-menu__a" href="#ferrari">Ferrari</a>
+                        <a class="team-menu__a" href="#mercedes">Mercedes</a>
+                        <a class="team-menu__a" href="#alpine">Alpine</a>
+                        <a class="team-menu__a" href="#mclaren">McLaren</a>
+                        <a class="team-menu__a" href="#alfa_romeo">Alfa Romeo</a>
+                        <a class="team-menu__a" href="#aston_martin">Aston Martin</a>
+                        <a class="team-menu__a" href="#haas">Haas</a>
+                        <a class="team-menu__a" href="#alphatauri">AlphaTauri</a>
+                        <a class="team-menu__a" href="#williams">Williams</a>
+                    </nav>
+                </section>
+                <section class="wcc-standing">
+                    <h1 class="aside__header">Итоги сезона</h1>
+                    <table class="wcc-standing__table">
+                        <caption class="wcc-standing__caption">Командный чемпионат</caption>
+                        <thead class="wcc-standing__thead">
+                            <tr>
+                                <th>Место</th>
+                                <th>Команда</th>
+                                <th>Очки</th>
+                            </tr>
+                        </thead>
+                        <tbody class="wcc-standing__tbody">
+                            <tr>
+                                <td>1</td>
+                                <td>Red Bull</td>
+                                <td>729</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Ferrari</td>
+                                <td>554</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Mercedes</td>
+                                <td>515</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Alpine</td>
+                                <td>173</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>McLaren</td>
+                                <td>159</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Alfa Romeo</td>
+                                <td>55</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Aston Martin</td>
+                                <td>55</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Haas</td>
+                                <td>37</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>AlphaTauri</td>
+                                <td>35</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Williams</td>
+                                <td>8</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section class="best-team-radio">
+                    <h2 class="aside__header">Лучшее командное радио</h2>
+                    <blockquote class="best-team-radio__blockquote">
+                        <p class="best-team-radio__p">Grazie, grazie... [coughs] Oh, I pressed the drinks button.</p>
+                        <cite class="best-team-radio__cite">Charles Leclerc</cite>
+                    </blockquote>
+                </section>
             </aside>
-            <section>
-                <section id="red_bull">
-                    <h1>Red Bull</h1>
-                    <article>
-                        <img src="./resources/merch/red_bull/cap.webp" alt="кепка" height="200">
-                        <p>Кепка</p>
-                        <p>2000.00</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/red_bull/polo.webp" alt="поло" height="200">
-                        <p>Поло</p>
-                        <p>5000.00</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/red_bull/thermos.jpg" alt="термос" height="200">
-                        <p>Термос</p>
-                        <p>3500.00</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/red_bull/beanie.jpg" alt="шапка" height="200">
-                        <p>Шапка</p>
-                        <p>2500.00</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/red_bull/umbrella.webp" alt="зонт" height="200">
-                        <p>Зонт</p>
-                        <p>3500.00</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/red_bull/monopoly.webp" alt="монополия" height="200">
-                        <p>Монополия</p>
-                        <p>3000.00</p>
-                    </article>
+            <section class="main-content">
+                <section class="main-content__section" id="red_bull">
+                    <hr class="main-content__hr">
+                    <h1 class="main-content__header">Red Bull</h1>
+                    <hr class="main-content__hr">
+                    <div class="main-content__row">
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/red-bull/team-baseball-cap.jpg" alt="кепка">
+                            <p class="merch-card__price merch-card__price_type_reduced">Reduced: &pound;19.80</p>
+                            <p class="merch-card__price merch-card__price_type_regular">Regular: &pound;33.00</p>
+                            <p class="merch-card__title">Oracle Red Bull Racing 2022 Team Baseball Cap</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/red-bull/team-polo.jpg" alt="поло">
+                            <p class="merch-card__price merch-card__price_type_reduced">Reduced: &pound;42.60</p>
+                            <p class="merch-card__price merch-card__price_type_regular">Regular: &pound;71.00</p>
+                            <p class="merch-card__title">Oracle Red Bull Racing 2022 Team Polo</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/red-bull/rb18-no1-max-verstappen-1_43-model.jpg" alt="модель машины">
+                            <p class="merch-card__price merch-card__price_type_reduced">Reduced: &pound;50.25</p>
+                            <p class="merch-card__price merch-card__price_type_regular">Regular: &pound;75.00</p>
+                            <p class="merch-card__title">Oracle Red Bull Racing RB18 No.1 Max Verstappen 1:43 Model</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/red-bull/team-hooded-sweat.jpg" alt="толстовка">
+                            <p class="merch-card__price merch-card__price_type_reduced">Reduced: &pound;63.65</p>
+                            <p class="merch-card__price merch-card__price_type_regular">Regular: &pound;95.00</p>
+                            <p class="merch-card__title">Oracle Red Bull Racing 2022 Team Hooded Sweat</p>
+                        </article>
+                    </div>
+                    <hr class="main-content__hr">
+                    <div class="main-content__row">
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/red-bull/logo-flag.jpg" alt="флаг">
+                            <p class="merch-card__price merch-card__price_type_reduced">Reduced: &pound;15.41</p>
+                            <p class="merch-card__price merch-card__price_type_regular">Regular: &pound;23.00</p>
+                            <p class="merch-card__title">Oracle Red Bull Racing Logo Flag</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/red-bull/japan-t-shirt.jpg" alt="футболка">
+                            <p class="merch-card__price merch-card__price_type_reduced">Reduced: &pound;22.11</p>
+                            <p class="merch-card__price merch-card__price_type_regular">Regular: &pound;33.00</p>
+                            <p class="merch-card__title">Oracle Red Bull Racing Japan T-Shirt</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/red-bull/poster.jpg" alt="постер">
+                            <p class="merch-card__price merch-card__price_type_reduced">Reduced: &pound;44.00</p>
+                            <p class="merch-card__price merch-card__price_type_regular">Regular: &pound;55.00</p>
+                            <p class="merch-card__title">Oracle Red Bull Racing Team 2022 Limited Edition Poster</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/red-bull/reusable-mug.jpg" alt="термос">
+                            <p class="merch-card__price merch-card__price_type_reduced">Reduced: &pound;22.04</p>
+                            <p class="merch-card__price merch-card__price_type_regular">Regular: &pound;29.00</p>
+                            <p class="merch-card__title">Oracle Red Bull Racing Reusable Mug</p>
+                        </article>
+                    </div>
                 </section>
-                <section id="ferrari">
-                    <h1>Ferrari</h1>
-                    <article>
-                        <img src="./resources/merch/ferrari/cap.jpg" alt="кепка" height="200">
-                        <p>Кепка</p>
-                        <p>2000</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/ferrari/polo.jpg" alt="поло" height="200">
-                        <p>Поло</p>
-                        <p>4500</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/ferrari/thermos.jpg" alt="термос" height="200">
-                        <p>Термос</p>
-                        <p>1000</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/ferrari/jacket.jpg" alt="куртка" height="200">
-                        <p>Куртка</p>
-                        <p>9000</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/ferrari/backpack.jpg" alt="рюкзак" height="200">
-                        <p>Рюкзак</p>
-                        <p>4500.00</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/ferrari/shoes.jpg" alt="ботинки" height="200">
-                        <p>Ботинки</p>
-                        <p>20000</p>
-                    </article>
+                <section class="main-content__section" id="ferrari">
+                    <hr class="main-content__hr">
+                    <h1 class="main-content__header">Ferrari</h1>
+                    <hr class="main-content__hr">
+                    <div class="main-content__row">
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/ferrari/team-baseball-cap.jpg" alt="кепка">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;33.00</p>
+                            <p class="merch-card__title">Scuderia Ferrari 2022 Team Baseball Cap</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/ferrari/team-polo.jpg" alt="поло">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;71.00</p>
+                            <p class="merch-card__title">Scuderia Ferrari 2022 Team Polo</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/ferrari/team-backpack.jpg" alt="рюкзак">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;71.00</p>
+                            <p class="merch-card__title">Scuderia Ferrari 2022 Team Backpack</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/ferrari/team-hooded-sweat.jpg" alt="толстовка">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;104.00</p>
+                            <p class="merch-card__title">Scuderia Ferrari 2022 Team Hooded Sweat</p>
+                        </article>
+                    </div>
+                    <hr class="main-content__hr">
+                    <div class="main-content__row">
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/ferrari/polo-by-puma.jpg" alt="поло">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;66.00</p>
+                            <p class="merch-card__title">Scuderia Ferrari Race All Over Print Polo by Puma - Black</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/ferrari/graphic-t-shirt-by-puma.jpg" alt="футболка">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;47.00</p>
+                            <p class="merch-card__title">Scuderia Ferrari Race Graphic T-Shirt by Puma - Black</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/ferrari/puma-logo-cap.jpg" alt="кепка">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;33.00</p>
+                            <p class="merch-card__title">Scuderia Ferrari Puma Logo Cap - Black</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/ferrari/sweat-hoodie-by-puma.jpg" alt="толстовка">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;104.00</p>
+                            <p class="merch-card__title">Scuderia Ferrari Race All Over Print Sweat Hoodie by Puma - Black</p>
+                        </article>
+                    </div>
                 </section>
-                <section id="mercedes">
-                    <h1>Mercedes</h1>
-                    <article>
-                        <img src="./resources/merch/mercedes/cap.jpg" alt="кепка" height="200">
-                        <p>Кепка</p>
-                        <p>5000</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/mercedes/polo.jpg" alt="поло" height="200">
-                        <p>Поло</p>
-                        <p>4500</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/mercedes/thermos.jpg" alt="термос" height="200">
-                        <p>Термос</p>
-                        <p>2000</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/mercedes/hoodie.jpg" alt="толстовка" height="200">
-                        <p>Толстовка</p>
-                        <p>7000</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/mercedes/bag.jpg" alt="сумка" height="200">
-                        <p>Сумка</p>
-                        <p>5000</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/mercedes/rubiks_cube.jpg" alt="кубик рубика" height="200">
-                        <p>Кубик Рубика</p>
-                        <p>1000</p>
-                    </article>
+                <section class="main-content__section" id="mercedes">
+                    <hr class="main-content__hr">
+                    <h1 class="main-content__header">Mercedes</h1>
+                    <hr class="main-content__hr">
+                    <div class="main-content__row">
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/mercedes/lewis-trucker-cap.jpg" alt="кепка">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;43.00</p>
+                            <p class="merch-card__title">Mercedes AMG Petronas F1 Lewis Hamilton 2022 Special Edition Party Trucker Cap - USA</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/mercedes/team-polo.jpg" alt="поло">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;66.00</p>
+                            <p class="merch-card__title">Mercedes AMG Petronas F1 2022 Team Polo - Black</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/mercedes/w13-e-lewis-hamilton-1_43.jpg" alt="модель машины">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;75.00</p>
+                            <p class="merch-card__title">Mercedes AMG Petronas F1 No.44 W13 E Performance - 3rd Place Bahrain GP 2022 - Lewis Hamilton 1:43 Model</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/mercedes/team-softshell-jacket.jpg" alt="куртка">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;133.00</p>
+                            <p class="merch-card__title">Mercedes AMG Petronas F1 2022 Team Softshell Jacket</p>
+                        </article>
+                    </div>
+                    <hr class="main-content__hr">
+                    <div class="main-content__row">
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/mercedes/lightweight-padded-gilet.jpg" alt="жилет">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;90.00</p>
+                            <p class="merch-card__title">Mercedes AMG Petronas F1 Lightweight Padded Gilet</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/mercedes/replica-edition-black-christmas-puma-speedcat-pro-driver-shoes.jpg" alt="ботинки">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;320.00</p>
+                            <p class="merch-card__title">Mercedes AMG Petronas Replica Edition Black Christmas Puma Speedcat Pro Driver Shoes</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/mercedes/george-russell-1_5-model-helmet.jpg" alt="модель шлема">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;38.00</p>
+                            <p class="merch-card__title">Mercedes AMG Petronas F1 2022 George Russell 1:5 Model Helmet</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/mercedes/statement-hoodie-by-puma.jpg" alt="толстовка">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;95.00</p>
+                            <p class="merch-card__title">Mercedes AMG Petronas F1 Statement Hoodie by Puma - Black</p>
+                        </article>
+                    </div>
                 </section>
-                <section id="alpine">
-                    <h1>Alpine</h1>
-                    <article>
-                        <img src="./resources/merch/alpine/cap.jpg" alt="кепка" height="200">
-                        <p>Кепка</p>
-                        <p>3000</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/alpine/shirt.jpg" alt="футболка" height="200">
-                        <p>Футболка</p>
-                        <p>3500</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/alpine/shoes.jpg" alt="кроссовки" height="200">
-                        <p>Кроссовки</p>
-                        <p>8500</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/alpine/pants.jpg" alt="штаны" height="200">
-                        <p>Штаны</p>
-                        <p>6500</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/alpine/bag_ig.jpg" alt="сумка" height="200">
-                        <p>Сумка</p>
-                        <p>1500</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/alpine/book.jpg" alt="книга" height="200">
-                        <p>Книга</p>
-                        <p>2000</p>
-                    </article>
+                <section class="main-content__section" id="alpine">
+                    <hr class="main-content__hr">
+                    <h1 class="main-content__header">Alpine</h1>
+                    <hr class="main-content__hr">
+                    <div class="main-content__row">
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/alpine/stretch-snap-cap.jpg" alt="кепка">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;39.00</p>
+                            <p class="merch-card__title">BWT Alpine F1 Team 2022 New Era 9FIFTY Stretch Snap Cap</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/alpine/team-2022-polo-shirt.jpg" alt="поло">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;70.00</p>
+                            <p class="merch-card__title">BWT Alpine F1 Team 2022 Polo Shirt - Blue</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/alpine/fernando-alonso-1_43-model.jpg" alt="модель машины">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;75.00</p>
+                            <p class="merch-card__title">BWT Alpine F1 Team A522 No.14 - 9th Place Bahrain GP 2022 - Fernando Alonso 1:43 Model</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/alpine/team-2022-rain-jacket.jpg" alt="куртка">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;110.00</p>
+                            <p class="merch-card__title">BWT Alpine F1 Team 2022 Rain Jacket</p>
+                        </article>
+                    </div>
+                    <hr class="main-content__hr">
+                    <div class="main-content__row">
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/alpine/mexico-t-shirt.jpg" alt="футболка">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;65.00</p>
+                            <p class="merch-card__title">BWT Alpine F1 2022 Team Special Edition Mexico T-Shirt</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/alpine/esteban-ocon-1_5-model-helmet.jpg" alt="модель шлема">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;38.00</p>
+                            <p class="merch-card__title">BWT Alpine F1 Team 2022 Esteban Ocon 1:5 Model Helmet</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/alpine/cuff-beanie.jpg" alt="шапка">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;26.00</p>
+                            <p class="merch-card__title">BWT Alpine F1 Team 2022 New Era Cuff Beanie</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/alpine/stretch-snap-france-cap.jpg" alt="книга">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;37.00</p>
+                            <p class="merch-card__title">BWT Alpine F1 Team 2022 New Era Special Edition 9FIFTY Stretch Snap France Cap</p>
+                        </article>
+                    </div>
                 </section>
-                <section id="mclaren">
-                    <h1>McLaren</h1>
-                    <article>
-                        <img src="./resources/merch/mclaren/cap.webp" alt="кепка" height="200">
-                        <p>Кепка</p>
-                        <p>2500</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/mclaren/polo.jpg" alt="поло" height="200">
-                        <p>Поло</p>
-                        <p>4500</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/mclaren/thermos.webp" alt="термос" height="200">
-                        <p>Термос</p>
-                        <p>2000</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/mclaren/gilet.jpg" alt="жилет" height="200">
-                        <p>Жилет</p>
-                        <p>6000</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/mclaren/wallet.webp" alt="кошелек" height="200">
-                        <p>Кошелек</p>
-                        <p>11000</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/mclaren/lego_car.webp" alt="модель лего" height="200">
-                        <p>Модель лего</p>
-                        <p>10000</p>
-                    </article>
+                <section class="main-content__section" id="mclaren">
+                    <hr class="main-content__hr">
+                    <h1 class="main-content__header">McLaren</h1>
+                    <hr class="main-content__hr">
+                    <div class="main-content__row">
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/mclaren/team-cap.jpg" alt="кепка">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;37.00</p>
+                            <p class="merch-card__title">McLaren 2022 New Era 9FORTY Team Cap</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/mclaren/team-set-up-t-shirt.jpg" alt="футболка">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;50.00</p>
+                            <p class="merch-card__title">McLaren 2022 Team Set Up T-Shirt - Grey</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/mclaren/mclaren-italian-gp-winner-daniel-ricciardo-and-2nd-place-lando-norris-1_43-model.jpg" alt="модель машин">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;190.00</p>
+                            <p class="merch-card__title">McLaren Italian GP Winner Daniel Ricciardo and 2nd Place Lando Norris 1:43 Model</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/mclaren/team-hooded-sweat.jpg" alt="толстовка">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;90.00</p>
+                            <p class="merch-card__title">McLaren 2022 Team Hooded Sweat - Unisex</p>
+                        </article>
+                    </div>
+                    <hr class="main-content__hr">
+                    <div class="main-content__row">
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/mclaren/cuff-knit-beanie.jpg" alt="шапка">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;26.00</p>
+                            <p class="merch-card__title">McLaren 2022 New Era Daniel Ricciardo Cuff Knit Beanie</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/mclaren/graphic-hoodie.jpg" alt="толстовка">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;75.00</p>
+                            <p class="merch-card__title">Daniel Ricciardo Graphic Hoodie- Singapore - Olive</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/mclaren/lando-norris-1_5-helmet-model.jpg" alt="модель шлема">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;38.00</p>
+                            <p class="merch-card__title">McLaren 2022 Lando Norris 1:5 Helmet Model</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/mclaren/telescopic-umbrella.jpg" alt="зонт">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;42.00</p>
+                            <p class="merch-card__title">McLaren Telescopic Umbrella</p>
+                        </article>
+                    </div>
                 </section>
-                <section id="alfa_romeo">
-                    <h1>Alfa Romeo</h1>
-                    <article>
-                        <img src="./resources/merch/alfa_romeo/cap.jpg" alt="кепка" height="200">
-                        <p>Кепка</p>
-                        <p>3000</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/alfa_romeo/polo.jpg" alt="поло" height="200">
-                        <p>Поло</p>
-                        <p>5500</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/alfa_romeo/hoodie.jpg" alt="толстовка" height="200">
-                        <p>Толстовка</p>
-                        <p>8500</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/alfa_romeo/neckwarmer.jpg" alt="шарф" height="200">
-                        <p>Шарф</p>
-                        <p>1500</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/alfa_romeo/card_holder.jpg" alt="держатель для карт" height="200">
-                        <p>Дерхатель для карт</p>
-                        <p>3000</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/alfa_romeo/towel.jpg" alt="полотенце" height="200">
-                        <p>Полотенце</p>
-                        <p>4500</p>
-                    </article>
+                <section class="main-content__section" id="alfa_romeo">
+                    <hr class="main-content__hr">
+                    <h1 class="main-content__header">Alfa Romeo</h1>
+                    <hr class="main-content__hr">
+                    <div class="main-content__row">
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/alfa-romeo/team-cap.jpg" alt="кепка">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;32.00</p>
+                            <p class="merch-card__title">Alfa Romeo F1 Team ORLEN 2022 Team Cap</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/alfa-romeo/team-polo.jpg" alt="поло">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;70.00</p>
+                            <p class="merch-card__title">Alfa Romeo F1 Team ORLEN 2022 Team Polo</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/alfa-romeo/valtteri-bottas-1_5-model-helmet.jpg" alt="модель шлема">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;38.00</p>
+                            <p class="merch-card__title">Alfa Romeo Sauber F1 Team 2022 Team Valtteri Bottas 1:5 Model Helmet</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/alfa-romeo/team-longsleeve-t-shirt.jpg" alt="рубашка с длинными рукавами">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;55.00</p>
+                            <p class="merch-card__title">Alfa Romeo Sauber F1 Longsleeve T-Shirt - Black</p>
+                        </article>
+                    </div>
+                    <hr class="main-content__hr">
+                    <div class="main-content__row">
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/alfa-romeo/monza-bucket-hat.jpg" alt="панама">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;35.00</p>
+                            <p class="merch-card__title">Alfa Romeo Sauber F1 Racing Special Edition Monza Bucket Hat</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/alfa-romeo/kimi-snapback-hat.jpg" alt="кепка">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;35.00</p>
+                            <p class="merch-card__title">Kimi by West Coast Choppers Cross Seven Snapback Roundbill Hat - Black</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/alfa-romeo/kimi-t-shirt.jpg" alt="футболка">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;35.00</p>
+                            <p class="merch-card__title">Kimi by West Coast Choppers OG T-Shirt - White</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/alfa-romeo/leave-me-alone-crew-socks.jpg" alt="носки">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;14.00</p>
+                            <p class="merch-card__title">Kimi by West Coast Choppers Leave Me Alone Crew Socks</p>
+                        </article>
+                    </div>
                 </section>
-                <section id="haas">
-                    <h1>Haas</h1>
-                    <article>
-                        <img src="./resources/merch/haas/cap.jpg" alt="кепка" height="200">
-                        <p>Кепка</p>
-                        <p>2500</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/haas/polo.webp" alt="поло" height="200">
-                        <p>Поло</p>
-                        <p>5000</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/haas/hoodie.webp" alt="толстовка" height="200">
-                        <p>Толстовка</p>
-                        <p>5000</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/haas/kevin_tee.webp" alt="футболка" height="200">
-                        <p>Футболка</p>
-                        <p>2500</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/haas/legends_tee.webp" alt="футболка" height="200">
-                        <p>Футболка</p>
-                        <p>2500</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/haas/guenter_tee.webp" alt="футболка" height="200">
-                        <p>Футболка</p>
-                        <p>2500</p>
-                    </article>
+                <section class="main-content__section" id="aston_martin">
+                    <hr class="main-content__hr">
+                    <h1 class="main-content__header">Aston Martin</h1>
+                    <hr class="main-content__hr">
+                    <div class="main-content__row">
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/aston-martin/team-cap.jpg" alt="кепка">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;35.00</p>
+                            <p class="merch-card__title">Aston Martin Cognizant F1 2022 Official Team Cap - Green</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/aston-martin/team-polo.jpg" alt="поло">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;65.00</p>
+                            <p class="merch-card__title">Aston Martin Cognizant F1 2022 Official Team Polo</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/aston-martin/limited-edition-poster.jpg" alt="постер">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;48.00</p>
+                            <p class="merch-card__title">Aston Martin F1 Team 2022 Limited Edition Poster</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/aston-martin/team-hybrid-jacket.jpg" alt="куртка">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;150.00</p>
+                            <p class="merch-card__title">Aston Martin Cognizant F1 2022 Official Team Hybrid Jacket</p>
+                        </article>
+                    </div>
+                    <hr class="main-content__hr">
+                    <div class="main-content__row">
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/aston-martin/lifestyle-hoodie-black.jpg" alt="толстовка">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;85.00</p>
+                            <p class="merch-card__title">Aston Martin F1 Cognizant F1 Lifestyle Hoodie - Black</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/aston-martin/team-gilet.jpg" alt="жилет">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;90.00</p>
+                            <p class="merch-card__title">Aston Martin Cognizant F1 2021 Official Team Gilet</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/aston-martin/team-grandstand-flag.jpg" alt="флаг">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;20.00</p>
+                            <p class="merch-card__title">Aston Martin F1 Cognizant F1 2022 Official Team Grandstand Flag</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/aston-martin/sebastian-vettel-hoodie.jpg" alt="толстовка">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;90.00</p>
+                            <p class="merch-card__title">Aston Martin F1 Cognizant F1 Official Sebastian Vettel Hoodie - Green</p>
+                        </article>
+                    </div>
                 </section>
-                <section id="alphatauri">
-                    <h1>AlphaTauri</h1>
-                    <article>
-                        <img src="./resources/merch/alphatauri/cap.jpg" alt="кепка" height="200">
-                        <p>Кепка</p>
-                        <p>2500</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/alphatauri/polo.jpg" alt="поло" height="200">
-                        <p>Поло</p>
-                        <p>5000</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/alphatauri/thermos.jpg" alt="термос" height="200">
-                        <p>Термос</p>
-                        <p>2000</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/alphatauri/jacket.jpg" alt="куртка" height="200">
-                        <p>Куртка</p>
-                        <p>10000</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/alphatauri/backpack.jpg" alt="рюкзак" height="200">
-                        <p>Рюкзак</p>
-                        <p>8500</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/alphatauri/keyring.jpg" alt="брелок" height="200">
-                        <p>Брелок</p>
-                        <p>1000</p>
-                    </article>
+                <section class="main-content__section" id="haas">
+                    <hr class="main-content__hr">
+                    <h1 class="main-content__header">Haas</h1>
+                    <hr class="main-content__hr">
+                    <div class="main-content__row">
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/haas/team-cap.jpg" alt="кепка">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;48.00</p>
+                            <p class="merch-card__title">Haas Racing F1 2022 Team Hat</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/haas/2022-team-polo.jpg" alt="поло">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;98.00</p>
+                            <p class="merch-card__title">Haas Racing F1 2022 Men's Team Fitted Polo Shirt</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/haas/2020-team-polo.jpg" alt="поло">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;91.00</p>
+                            <p class="merch-card__title">Haas Racing F1 2020 Men's Team Polo Black</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/haas/2019-team-polo.jpg" alt="поло">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;91.00</p>
+                            <p class="merch-card__title">Haas 2019 F1 Women's Team Polo Black</p>
+                        </article>
+                    </div>
+                    <hr class="main-content__hr">
+                    <div class="main-content__row">
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/haas/team-hoodie.jpg" alt="толстовка">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;98.00</p>
+                            <p class="merch-card__title">Haas Racing F1 Men's Team Hoodie</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/haas/team-fitted-1-4-zip-sweatshirt.jpg" alt="толстовка">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;140.00</p>
+                            <p class="merch-card__title">Haas Racing F1 2022 Men's Team Fitted 1/4 Zip Sweatshirt</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/haas/kevin-magnussen-hoodie.jpg" alt="толстовка">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;98.00</p>
+                            <p class="merch-card__title">Haas Racing F1 Men's Kevin Magnussen Hoodie</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/haas/mick-schumacher-hoodie.jpg" alt="толстовка">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;98.00</p>
+                            <p class="merch-card__title">Haas Racing F1 Men's Mick Schumacher Hoodie</p>
+                        </article>
+                    </div>
                 </section>
-                <section id="aston_martin">
-                    <h1>Aston Martin</h1>
-                    <article>
-                        <img src="./resources/merch/aston_martin/cap.webp" alt="кепка" height="200">
-                        <p>Кепка</p>
-                        <p>2500</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/aston_martin/polo.webp" alt="поло" height="200">
-                        <p>Поло</p>
-                        <p>4500</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/aston_martin/thermos.webp" alt="термос" height="200">
-                        <p>Термос</p>
-                        <p>2500</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/aston_martin/beanie.webp" alt="шапка" height="200">
-                        <p>Шапка</p>
-                        <p>1500</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/aston_martin/backpack.webp" alt="рюкзак" height="200">
-                        <p>Рюкзак</p>
-                        <p>6000</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/aston_martin/cap_case.webp" alt="кейс для кепки" height="200">
-                        <p>Кейс для кепки</p>
-                        <p>3000</p>
-                    </article>
+                <section class="main-content__section" id="alphatauri">
+                    <hr class="main-content__hr">
+                    <h1 class="main-content__header">AlphaTauri</h1>
+                    <hr class="main-content__hr">
+                    <div class="main-content__row">
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/alphatauri/team-cap.jpg" alt="кепка">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;31.00</p>
+                            <p class="merch-card__title">Scuderia AlphaTauri 2022 Team Cap</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/alphatauri/team-polo-navy.jpg" alt="поло">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;65.00</p>
+                            <p class="merch-card__title">Scuderia AlphaTauri 2022 Team Polo - Navy</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/alphatauri/team-backpack.jpg" alt="рюкзак">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;110.00</p>
+                            <p class="merch-card__title">Scuderia AlphaTauri Team Backpack</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/alphatauri/team-softshell-jacket.jpg" alt="куртка">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;140.00</p>
+                            <p class="merch-card__title">Scuderia AlphaTauri 2022 Team Softshell Jacket - Unisex</p>
+                        </article>
+                    </div>
+                    <hr class="main-content__hr">
+                    <div class="main-content__row">
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/alphatauri/team-logo-flag.jpg" alt="флаг">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;26.00</p>
+                            <p class="merch-card__title">Scuderia AlphaTauri Team Logo Flag</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/alphatauri/yuki-tsunoda-1_5-helmet-model.jpg" alt="модель шлема">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;38.00</p>
+                            <p class="merch-card__title">Scuderia AlphaTauri 2022 Yuki Tsunoda 1:5 Helmet Model</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/alphatauri/france-gp-t-shirt.jpg" alt="футболка">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;32.00</p>
+                            <p class="merch-card__title">Scuderia AlphaTauri 2022 France GP T-Shirt</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/alphatauri/team-keyring.jpg" alt="брелок">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;12.00</p>
+                            <p class="merch-card__title">Scuderia AlphaTauri Team Keyring</p>
+                        </article>
+                    </div>
                 </section>
-                <section id="williams">
-                    <h1>Williams</h1>
-                    <article>
-                        <img src="./resources/merch/williams/cap.webp" alt="кепка" height="200">
-                        <p>Кепка</p>
-                        <p>2500</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/williams/polo.webp" alt="polo" height="200">
-                        <p>Поло</p>
-                        <p>4000</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/williams/umbrella.webp" alt="зонт" height="200">
-                        <p>Зонт</p>
-                        <p>3500</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/williams/beanie.webp" alt="шапка" height="200">
-                        <p>Шапка</p>
-                        <p>1500</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/williams/bag.webp" alt="сумка" height="200">
-                        <p>Сумка</p>
-                        <p>2000</p>
-                    </article>
-                    <article>
-                        <img src="./resources/merch/williams/socks.webp" alt="носки" height="200">
-                        <p>Носки</p>
-                        <p>1000</p>
-                    </article>
+                <section class="main-content__section" id="williams">
+                    <hr class="main-content__hr">
+                    <h1 class="main-content__header">Williams</h1>
+                    <hr class="main-content__hr">
+                    <div class="main-content__row">
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/williams/team-graphic-3d-cap.jpg" alt="кепка">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;30.00</p>
+                            <p class="merch-card__title">Williams Racing 2022 Team Graphic 3D Cap</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/williams/team-media-polo-navy.jpg" alt="polo">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;60.00</p>
+                            <p class="merch-card__title">Williams Racing 2022 Team Media Polo - Navy</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/williams/limited-edition-poster.jpg" alt="постер">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;48.00</p>
+                            <p class="merch-card__title">Williams Nigel Mansel 1992 FW14B F1 World Drivers Champion - Limited Edition Poster</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/williams/team-performance-jacket.jpg" alt="куртка">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;160.00</p>
+                            <p class="merch-card__title">Williams Racing 2022 Team Performance Jacket</p>
+                        </article>
+                    </div>
+                    <hr class="main-content__hr">
+                    <div class="main-content__row">
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/williams/team-training-jersey.jpg" alt="футболка">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;50.00</p>
+                            <p class="merch-card__title">Williams Racing 2022 Team Training Jersey - Navy</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/williams/team-gilet.jpg" alt="жилет">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;70.00</p>
+                            <p class="merch-card__title">Williams Racing 2022 Team Gilet</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/williams/team-midlayer-top.jpg" alt="толстовка">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;95.00</p>
+                            <p class="merch-card__title">Williams Racing 2022 Team Midlayer Top - Navy</p>
+                        </article>
+                        <article class="merch-card">
+                            <img class="merch-card__img" src="./resources/merch/williams/team-media-polo-blue.jpg" alt="поло">
+                            <p class="merch-card__price merch-card__price_type_reduced">&pound;60.00</p>
+                            <p class="merch-card__title">Williams Racing 2022 Team Media Polo - Blue</p>
+                        </article>
+                    </div>
                 </section>
             </section>
-            <aside>
-                <h1>Раунд 16/22. ГП Италии.</h1>
-                <h2>
-                    <pre>
-                    _ _ _   __
-_    _             / _ _/.-' /  _______
-\`../ |o_..__     / /__   / /  _\=.o.=/_
- (_)______(_).>  / ___/  / /  |_|_____|_|
-~~~~~~~~~~~~~~~~/_/~~~~~/_/~~~~~~~~~~~~~~
-         -= WORLD CHAMPIONSHIP =-
-                    </pre>
-                </h2>
-                    <table>
-                        <tr>
-                            <th>Место</th>
-                            <th>Команда</th>
-                            <th>Очки</th>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>Red Bull</td>
-                            <td>545</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Ferrari</td>
-                            <td>406</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Mercedes</td>
-                            <td>371</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Alpine</td>
-                            <td>125</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>McLaren</td>
-                            <td>107</td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>Alfa Romeo</td>
-                            <td>52</td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>Haas</td>
-                            <td>34</td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td>AlphaTauri</td>
-                            <td>33</td>
-                        </tr>
-                        <tr>
-                            <td>9</td>
-                            <td>Aston Martin</td>
-                            <td>25</td>
-                        </tr>
-                        <tr>
-                            <td>10</td>
-                            <td>Williams</td>
-                            <td>6</td>
-                        </tr>
-                    </table>
-                <h2>Цитата гонки.</h2>
-                <blockquote>
-                    <p>Последний круг, последний круг, гонка закончится под машиной безопасности.</p>
-                    <cite>Питер Боннингтон</cite>
-                </blockquote>
-            </aside>
         </main>
-        <footer>
-            <nav>
-                <a>О НАС</a>
-                <a>ДОСТАВКА</a>
-                <a>ВОЗВРАТ</a>
-                <a>КОНТАКТЫ</a>
+        <footer class="footer">
+            <nav class="footer__nav">
+                <a class="footer__a" href="./pages/about.html">О нас</a>
+                <a class="footer__a" href="./pages/delivery.html">Доставка</a>
+                <a class="footer__a" href="./pages/returns.html">Возврат</a>
+                <a class="footer__a" href="./pages/contact.html">Контакты</a>
             </nav>
-            <code>System.out.println("СС ИТМО 2022")</code>
+            <pre class="footer__pre">
+                    _____    __
+_    _             / _ _/   / /    _______
+\`../ |o_..__     / /__    / /    _\=.o.=/_
+ (_)______(_).>  / ___/   / /    |_|_____|_|
+~~~~~~~~~~~~~~~~/_/~~~~~~/_/~~~~~~~~~~~~~~~~
+            </pre>
+            <code class="copyright">System.out.println("СС ИТМО 2022")</code>
+            <p class="formula">Наша формула успеха: цена<sup>0.5</sup> = клиенты<sup>&infin;</sup></p>
         </footer>
     </body>
 </html>
