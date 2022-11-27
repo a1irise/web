@@ -1,0 +1,5 @@
+.wcc-standing__table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+}

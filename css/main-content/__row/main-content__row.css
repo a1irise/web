@@ -1,0 +1,14 @@
+.main-content__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .main-content__row {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,24 @@
+.wcc-standing__tbody td {
+    font-size: 1rem;
+    line-height: normal;
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    text-align: center;
+    background: none;
+    color: #242424;
+    margin: 0;
+    padding: 8px;
+    white-space: normal;
+    letter-spacing: 0;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.wcc-standing__tbody tr:nth-child(odd) {
+
+}
+
+.wcc-standing__tbody tr:nth-child(even) {
+    background: #f0f0f0;
+}

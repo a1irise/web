@@ -1,0 +1,11 @@
+.best-team-radio {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    .best-team-radio {
+        display: none;
+    }
+}

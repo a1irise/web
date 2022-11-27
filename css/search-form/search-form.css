@@ -1,0 +1,7 @@
+.search-form {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    background: white;
+    border-radius: 5px;
+}
