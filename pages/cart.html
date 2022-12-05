@@ -3,8 +3,62 @@
     <head>
         <title>Корзина</title>
         <meta charset="UTF-8">
+        <link href="../css/normalize.css" rel="stylesheet">
+        <link href="../css/placeholder.css" rel="stylesheet">
+        <link href="../css/header/header.css" rel="stylesheet">
+        <link href="../css/header/__icon/header__icon.css" rel="stylesheet">
+        <link href="../css/header/__img/header__img.css" rel="stylesheet">
+        <link href="../css/search-form/search-form.css" rel="stylesheet">
+        <link href="../css/search-form/__input/search-form__input.css" rel="stylesheet">
+        <link href="../css/search-form/__button/search-form__button.css" rel="stylesheet">
+        <link href="../css/search-form/__img/search-form__img.css" rel="stylesheet">
+        <link href="../css/footer/footer.css" rel="stylesheet">
+        <link href="../css/footer/__nav/footer__nav.css" rel="stylesheet">
+        <link href="../css/footer/__a/footer__a.css" rel="stylesheet">
+        <link href="../css/footer/__a/_active/footer__a_active.css" rel="stylesheet">
+        <link href="../css/footer/__pre/footer__pre.css" rel="stylesheet">
+        <link href="../css/footer/__load-time/footer__load-time.css" rel="stylesheet">
+        <link href="../css/copyright/copyright.css" rel="stylesheet">
+        <link href="../css/formula/formula.css" rel="stylesheet">
+        <script src="../js/load_time.js"></script>
     </head>
     <body>
-        <a href="../index.html">Назад</a>
+        <header class="header">
+            <a class="header__icon" href="../index.html">
+                <img class="header__img" src="../resources/logo.png" alt="логотип">
+            </a>
+            <div class="search-form">
+                <input class="search-form__input" type="search" placeholder="Поиск..">
+                <button class="search-form__button">
+                    <img class="search-form__img" src="../resources/search.png" alt="поиск"/>
+                </button>
+            </div>
+            <a class="header__icon" href="../pages/account.html">
+                <img class="header__img" src="../resources/account.png" alt="аккаунт"/>
+            </a>
+            <a class="header__icon" href="../pages/cart.html">
+                <img class="header__img" src="../resources/cart.png" alt="корзина"/>
+            </a>
+        </header>
+        <main>
+            <div class="placeholder"></div>
+        </main>
+        <footer class="footer">
+            <nav class="footer__nav">
+                <a class="footer__a" href="../pages/about.html">О нас</a>
+                <a class="footer__a" href="../pages/delivery.html">Доставка</a>
+                <a class="footer__a" href="../pages/returns.html">Возврат</a>
+                <a class="footer__a" href="../pages/contact.html">Контакты</a>
+            </nav>
+            <pre class="footer__pre">
+                    _____    __
+_    _             / _ _/   / /    _______
+\`../ |o_..__     / /__    / /    _\=.o.=/_
+ (_)______(_).>  / ___/   / /    |_|_____|_|
+~~~~~~~~~~~~~~~~/_/~~~~~~/_/~~~~~~~~~~~~~~~~
+            </pre>
+            <code class="copyright">System.out.println("СС ИТМО 2022")</code>
+            <p class="formula">Наша формула успеха: цена<sup>0.5</sup> = клиенты<sup>&infin;</sup></p>
+        </footer>
     </body>
 </html>

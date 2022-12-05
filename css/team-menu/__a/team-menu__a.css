@@ -1,11 +1,18 @@
+:root {
+    --team-menu-background: none;
+    --team-menu-text-color: #242424;
+    --team-menu-border: #cdcdcd;
+    --team-menu-text-color-on-hover: #e10600;
+}
+
 .team-menu__a {
     font-size: 1rem;
     line-height: normal;
     font-family: "Open Sans", sans-serif;
     font-weight: normal;
     text-align: left;
-    background: none;
-    color: #242424;
+    background: var(--team-menu-background);
+    color: var(--team-menu-text-color);
     margin: 0;
     padding: 8px 10px;
     white-space: normal;
@@ -13,7 +20,7 @@
     font-style: normal;
     text-decoration: none;
     text-transform: none;
-    border-left: 1px solid #242424;
+    border-left: 2px solid var(--team-menu-border);
 }
 
 .team-menu__a:link {
@@ -21,18 +28,15 @@
 }
 
 .team-menu__a:visited {
-    color: #242424;
-}
-
-.team-menu__a:focus {
 
 }
 
 .team-menu__a:hover {
-    color: #e10600;
+    color: var(--team-menu-text-color-on-hover);
 }
 
 .team-menu__a:active {
     background: #e10600;
-    color: white;
+    color: #ffffff;
+    border-left: 2px solid #e10600;
 }
