@@ -16,11 +16,11 @@
 }
 
 .wcc-standing__thead th:nth-child(1) {
-    width: 20%;
+    width: 15%;
 }
 
 .wcc-standing__thead th:nth-child(2) {
-    width: 50%;
+    width: 55%;
 }
 
 .wcc-standing__thead th:nth-child(3) {

@@ -5,9 +5,9 @@
     font-weight: normal;
     text-align: center;
     background: none;
-    color: white;
+    color: #ffffff;
     margin: 0;
-    padding: 0;
+    padding: 10px;
     white-space: normal;
     letter-spacing: 0;
     font-style: normal;
@@ -20,11 +20,7 @@
 }
 
 .footer__a:visited {
-    color: white;
-}
-
-.footer__a:focus {
-
+    color: #ffffff;
 }
 
 .footer__a:hover {
