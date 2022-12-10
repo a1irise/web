@@ -1,0 +1,9 @@
+.wishlist-main__li {
+    border: 1px solid #e10600;
+    border-radius: 5px;
+    padding: 5px;
+    white-space: initial;
+    width: 70%;
+    align-self: center;
+    list-style-type: none;
+}
