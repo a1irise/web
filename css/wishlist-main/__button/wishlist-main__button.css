@@ -1,0 +1,12 @@
+.wishlist-main__button {
+    background: none;
+    border: none;
+    outline: none;
+    width: fit-content;
+    cursor: pointer;
+    align-self: center;
+}
+
+.wishlist-main__button:hover {
+    color: #e10600;
+}

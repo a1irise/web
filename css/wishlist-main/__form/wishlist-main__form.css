@@ -1,0 +1,9 @@
+.wishlist-main__form {
+    display: flex;
+    justify-content: center;
+
+}
+
+.wishlist-main__form:focus {
+
+}
