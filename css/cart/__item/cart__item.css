@@ -1,0 +1,9 @@
+.cart__item {
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
+    padding: 5px;
+    border: 1px solid #e10600;
+    border-radius: 5px;
+    margin: 10px;
+}

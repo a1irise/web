@@ -4,7 +4,8 @@
         <title>О нас</title>
         <meta charset="UTF-8">
         <link href="../css/normalize.css" rel="stylesheet">
-        <link href="../css/placeholder.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" rel="stylesheet">
         <link href="../css/header/header.css" rel="stylesheet">
         <link href="../css/header/__icon/header__icon.css" rel="stylesheet">
         <link href="../css/header/__img/header__img.css" rel="stylesheet">
@@ -12,6 +13,9 @@
         <link href="../css/search-form/__input/search-form__input.css" rel="stylesheet">
         <link href="../css/search-form/__button/search-form__button.css" rel="stylesheet">
         <link href="../css/search-form/__img/search-form__img.css" rel="stylesheet">
+        <link href="../css/about-main/about-main.css" rel="stylesheet">
+        <link href="../css/gallery/gallery.css" rel="stylesheet">
+        <link href="../css/gallery/__img/gallery__img.css" rel="stylesheet">
         <link href="../css/footer/footer.css" rel="stylesheet">
         <link href="../css/footer/__nav/footer__nav.css" rel="stylesheet">
         <link href="../css/footer/__a/footer__a.css" rel="stylesheet">
@@ -20,7 +24,7 @@
         <link href="../css/footer/__load-time/footer__load-time.css" rel="stylesheet">
         <link href="../css/copyright/copyright.css" rel="stylesheet">
         <link href="../css/formula/formula.css" rel="stylesheet">
-        <script src="../js/load_time.js" defer></script>
+        <script src="../js/load_time.js"></script>
     </head>
     <body>
         <header class="header">
@@ -40,8 +44,17 @@
                 <img class="header__img" src="../resources/cart.png" alt="корзина"/>
             </a>
         </header>
-        <main>
-            <div class="placeholder"></div>
+        <main class="about-main">
+            <div class="gallery">
+                <img class="gallery__img" src="../resources/memes%20l%20pain/getpreview.jpeg" alt="мем">
+                <img class="gallery__img" src="../resources/memes%20l%20pain/sbinnala-f1-dank-memes5.jpg" alt="мем">
+                <img class="gallery__img" src="../resources/memes%20l%20pain/maxresdefault%20(1).jpg" alt="мем">
+                <img class="gallery__img" src="../resources/memes%20l%20pain/ferrari-pitwall-clowns.jpg" alt="мем">
+                <img class="gallery__img" src="../resources/memes%20l%20pain/maxresdefault.jpg" alt="мем">
+                <img class="gallery__img" src="../resources/memes%20l%20pain/16393209694391.jpg" alt="боль">
+                <img class="gallery__img" src="../resources/memes%20l%20pain/formula-1-monaco-gp-2021-valtt-2.jpg" alt="боль">
+                <img class="gallery__img" src="../resources/memes%20l%20pain/skysports-max-verstappen-valtteri-bottas_5465531.jpg" alt="боль">
+            </div>
         </main>
         <footer class="footer">
             <nav class="footer__nav">
@@ -61,6 +74,9 @@ _    _             / _ _/   / /    _______
             <code class="copyright">System.out.println("СС ИТМО 2022")</code>
             <p class="formula">Наша формула успеха: цена<sup>0.5</sup> = клиенты<sup>&infin;</sup></p>
         </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
         <script src="../js/activate_page.js"></script>
+        <script src="../js/activate-slick.js"></script>
     </body>
 </html>

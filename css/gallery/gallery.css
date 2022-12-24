@@ -1,0 +1,11 @@
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 700px;
+}
+
+.slick-dots {
+    top: 670px;  // play with the number of pixels to position it as you want
+    left: 670px; // play with the number of pixels to position it as you want
+}
