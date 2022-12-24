@@ -12,6 +12,15 @@
         <link href="../css/search-form/__input/search-form__input.css" rel="stylesheet">
         <link href="../css/search-form/__button/search-form__button.css" rel="stylesheet">
         <link href="../css/search-form/__img/search-form__img.css" rel="stylesheet">
+        <link href="../css/cart/cart.css" rel="stylesheet">
+        <link href="../css/cart/__items/cart__items.css" rel="stylesheet">
+        <link href="../css/cart/__item/cart__item.css" rel="stylesheet">
+        <link href="../css/cart/__title/cart__title.css" rel="stylesheet">
+        <link href="../css/cart/__status/cart__status.css" rel="stylesheet">
+        <link href="../css/preloader/preloader.css" rel="stylesheet">
+        <link href="../css/preloader/_hidden/preloader_hidden.css" rel="stylesheet">
+        <link href="../css/error/error.css" rel="stylesheet">
+        <link href="../css/error/_hidden/error_hidden.css" rel="stylesheet">
         <link href="../css/footer/footer.css" rel="stylesheet">
         <link href="../css/footer/__nav/footer__nav.css" rel="stylesheet">
         <link href="../css/footer/__a/footer__a.css" rel="stylesheet">
@@ -40,8 +49,10 @@
                 <img class="header__img" src="../resources/cart.png" alt="корзина"/>
             </a>
         </header>
-        <main>
-            <div class="placeholder"></div>
+        <main class="cart">
+            <div class="cart__items"></div>
+            <img class="preloader" src="../resources/loading.gif" alt="Загрузка">
+            <p class="error error_hidden">Что-то пошло не так :/</p>
         </main>
         <footer class="footer">
             <nav class="footer__nav">
@@ -61,5 +72,6 @@ _    _             / _ _/   / /    _______
             <code class="copyright">System.out.println("СС ИТМО 2022")</code>
             <p class="formula">Наша формула успеха: цена<sup>0.5</sup> = клиенты<sup>&infin;</sup></p>
         </footer>
+        <script src="../js/fetch_api.js"></script>
     </body>
 </html>

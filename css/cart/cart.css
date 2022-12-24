@@ -1,0 +1,7 @@
+.cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+    margin: 15px;
+}
